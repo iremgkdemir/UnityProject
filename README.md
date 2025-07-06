@@ -48,8 +48,8 @@ Oyuncu, 2D platform yapısında ilerleyen bu oyunda, sahipsiz hayvanlara yardım
 - **Sprint Review katılımcıları** : Sena Dikici, Demet Karakoç, Hakan Özkan
 
 
-** Sprint Retrospective ** :
+**Sprint Retrospective** :
 
--Tasarım grubu, Developer grubu ve Scrum Master ile ortak bir toplantı yapıldı, görev dağılımı yapıldı.
--Tasarım grubu ve Developer grubu kendi aralarında görev dağılımı yaptı. Modelleme ve kullanılacak araçlar için fikir alışverişi yapıldı.
--Tasarım grubu ve Scrum master ile toplantı yapıldı ve 1.ci sprint görevleri için özet geçildi.
+- Tasarım grubu, Developer grubu ve Scrum Master ile ortak bir toplantı yapıldı, görev dağılımı yapıldı.
+- Tasarım grubu ve Developer grubu kendi aralarında görev dağılımı yaptı. Modelleme ve kullanılacak araçlar için fikir alışverişi yapıldı.
+- Tasarım grubu ve Scrum master ile toplantı yapıldı ve 1.ci sprint görevleri için özet geçildi.
