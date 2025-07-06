@@ -33,19 +33,19 @@ Oyuncu, 2D platform yapısında ilerleyen bu oyunda, sahipsiz hayvanlara yardım
 # SPRINT 1
 
 - Sprint için puan değerlendirmesi 10 puan olarak belirlenmiştir.
--  ** Puan tamamlama mantığı ** : Proje boyunca tamamlanması gereken backlog puanı 36'dır. İlk Sprint
+-  **Puan tamamlama mantığı** : Proje boyunca tamamlanması gereken backlog puanı 36'dır. İlk Sprint
   için bitirilmesi istenilen puan sayısı 10 olarak belirlenmiştir ve hedefe ulaşılmıştır.
-- ** Daily Scrum ** : Whatsapp ve MS Teams üzerinden görüşmeler sağlanmıştır.
-- ** Tasarım Grubu üyeleri ** : Sena Dikici, Hakan Özkan
-- ** Sprint 1 board update ** : Sprint Board ScreenShot :
+- **Daily Scrum** : Whatsapp ve MS Teams üzerinden görüşmeler sağlanmıştır.
+- **Tasarım Grubu Üyeleri** : Sena Dikici, Hakan Özkan
+- **Sprint 1 Board Update** : Sprint Board ScreenShot :
 Şu an için bulunmamaktadır. Grup üyeleri yoğun bir hafta geçirmiştir. Sadece ürün fikri ve özellikleri tartışıldı.
 
-- ** Ürün durumu ** : Fikir aşamasında olup 2.ci Sprint ile paylaşılacaktır.
+- **Ürün durumu** : Fikir aşamasında olup 2.ci Sprint ile paylaşılacaktır.
 
- ** Sprint Review ** :
+ **Sprint Review** :
 - Tasarım Grubu kendi assetlerini oluşturma kararı almıştır.
 
-- ** Sprint Review katılımcıları ** : Sena Dikici, Demet Karakoç, Hakan Özkan
+- **Sprint Review katılımcıları** : Sena Dikici, Demet Karakoç, Hakan Özkan
 
 
 ** Sprint Retrospective ** :
