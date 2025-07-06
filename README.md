@@ -8,9 +8,9 @@ Grup 54 Google Takımı
 
 # Takım Üyeleri
 
-* Scrum Master * - Demet Karakoç
-* Developer * - İrem Gökdemir, Yusuf Eren Bakınç
-* Product Owner * - Sena Dikici, Hakan Özkan
+* Scrum Master  - Demet Karakoç
+* Developer - İrem Gökdemir, Yusuf Eren Bakınç
+* Product Owner - Sena Dikici, Hakan Özkan
 
 # Oyun ismi
 
