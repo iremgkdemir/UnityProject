@@ -1,6 +1,5 @@
 
-![Image](https://github.com/user-attachments/assets/af03ee41-ae9f-424f-ba30-dfa25b032c7a)
-
+![Image](https://github.com/user-attachments/assets/209b644e-b629-4a5f-91d9-192e49f435de)
 
 
 # Takım İsmi
