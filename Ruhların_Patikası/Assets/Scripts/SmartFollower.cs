@@ -1,27 +1,16 @@
 using UnityEngine;
 
-public class SmartFollower : MonoBehaviour
+public class SpiritFollower : MonoBehaviour
 {
-    public Transform target;
-    public float followSpeed = 3f;
-    public Vector2 followOffset = new Vector2(0, 2f); 
-
-    private bool isFollowing = false;
-
-    public void StartFollowing(Transform newTarget)
-    {
-        target = newTarget;
-        isFollowing = true;
-
-        Vector3 flyPosition = target.position + (Vector3)followOffset;
-        transform.position = flyPosition;
-    }
+    public Transform target;               
+    public Vector2 followOffset = new Vector2(0f, 2f);  
+    public float followSpeed = 3f;         
 
     void Update()
     {
-        if (!isFollowing || target == null) return;
+        if (target == null) return;
 
-        Vector2 desiredPosition = (Vector2)target.position + followOffset;
-        transform.position = Vector2.Lerp(transform.position, desiredPosition, followSpeed * Time.deltaTime);
+        Vector2 targetPosition = (Vector2)target.position + followOffset;
+        transform.position = Vector2.Lerp(transform.position, targetPosition, followSpeed * Time.deltaTime);
     }
 }

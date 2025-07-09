@@ -5,19 +5,24 @@ public class AnimalInteract : MonoBehaviour
 {
     private bool isNearPlayer = false;
     private Transform playerTransform;
-    private SmartFollower follower;
+    private bool isFollowing = false;
 
-    void Start()
-    {
-        follower = GetComponent<SmartFollower>();
-    }
+    [Header("Takip Ayarlarý")]
+    public float followSpeed = 3f;
+    public Vector2 followOffset = new Vector2(0f, 2f); // Oyuncunun biraz üstünde
 
     void Update()
     {
-        if (isNearPlayer && Keyboard.current.eKey.wasPressedThisFrame)
+        if (!isFollowing && isNearPlayer && Keyboard.current.eKey.wasPressedThisFrame)
         {
-            follower.StartFollowing(playerTransform); 
-            Debug.Log("Hayvan havalandý ve takip etmeye baþladý!");
+            isFollowing = true;
+            Debug.Log("Ruhani hayvan seni takip etmeye baþladý!");
+        }
+
+        if (isFollowing && playerTransform != null)
+        {
+            Vector2 targetPos = (Vector2)playerTransform.position + followOffset;
+            transform.position = Vector2.Lerp(transform.position, targetPos, followSpeed * Time.deltaTime);
         }
     }
 
