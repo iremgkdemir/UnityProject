@@ -150,7 +150,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &3429027559564237996
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -212,12 +212,14 @@ MonoBehaviour:
   moveSpeed: 5.05
   jumpForce: 7
   hasKey: 0
+  maxLives: 3
   groundCheck: {fileID: 2032635550270333882}
   groundCheckRadius: 0.35
   groundLayer:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 320
   car: {fileID: 0}
+  swampDelay: 2
 --- !u!114 &282782727710848265
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -2,15 +2,15 @@ using UnityEngine;
 
 public class SpiritFollower : MonoBehaviour
 {
-    public Transform target;               
-    public Vector2 followOffset = new Vector2(0f, 2f);  
-    public float followSpeed = 3f;         
+    public Transform player;
+    public Vector3 offsetRight = new Vector3(-1.5f, 1.2f, 0f);
+    public Vector3 offsetLeft = new Vector3(1.5f, 1.2f, 0f);
+    public float followSpeed = 5f;
 
     void Update()
     {
-        if (target == null) return;
-
-        Vector2 targetPosition = (Vector2)target.position + followOffset;
-        transform.position = Vector2.Lerp(transform.position, targetPosition, followSpeed * Time.deltaTime);
+        bool isFacingRight = player.localScale.x > 0;
+        Vector3 targetPos = player.position + (isFacingRight ? offsetRight : offsetLeft);
+        transform.position = Vector3.Lerp(transform.position, targetPos, followSpeed * Time.deltaTime);
     }
 }
