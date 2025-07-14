@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 3658706174728785587}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.6, z: 0}
+  m_LocalPosition: {x: 0, y: -0.505, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -212,7 +212,10 @@ MonoBehaviour:
   moveSpeed: 5.05
   jumpForce: 7
   hasKey: 0
+  fallMultiplier: 2.5
+  lowJumpMultiplier: 2
   maxLives: 3
+  respawnPoint: {fileID: 0}
   groundCheck: {fileID: 2032635550270333882}
   groundCheckRadius: 0.35
   groundLayer:
@@ -333,4 +336,4 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 1.5
+  m_Radius: 1

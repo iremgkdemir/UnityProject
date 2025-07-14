@@ -9,7 +9,7 @@ public class AnimalInteract : MonoBehaviour
 
     [Header("Takip Ayarlarý")]
     public float followSpeed = 3f;
-    public Vector2 followOffset = new Vector2(0f, 2f); // Oyuncunun biraz üstünde
+    public Vector2 followOffset = new Vector2(0f, 2f); 
 
     void Update()
     {

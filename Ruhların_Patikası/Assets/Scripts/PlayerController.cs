@@ -12,13 +12,16 @@ public class PlayerController : MonoBehaviour
     private bool isJumping;
     private bool isGrounded;
     public bool hasKey = false;
+    public float fallMultiplier = 2.5f;
+    public float lowJumpMultiplier = 2f;
+
 
     [Header("Oyuncu Durumu")]
     public int maxLives = 3;
     private int currentLives;
 
     [Header("Respawn Noktası")]
-    public Transform respawnPoint; // Bu objeyi Inspector'da elle atayacağız
+    public Transform respawnPoint;
     private Vector3 respawnPosition;
 
     [Header("Zemin Kontrolü")]
@@ -56,12 +59,14 @@ public class PlayerController : MonoBehaviour
 
     private void Respawn()
     {
-        transform.position = respawnPosition;
+        transform.position = GameManager.Instance.lastCheckpointPosition;
         rb.linearVelocity = Vector2.zero; // hızı sıfırla
     }
 
+
     private void Update()
     {
+
         if (isInSwamp)
         {
             swampTimer += Time.deltaTime;
@@ -71,10 +76,10 @@ public class PlayerController : MonoBehaviour
             {
                 isInSwamp = false;
                 swampTimer = 0f;
-                Die(); // can kaybı
+                Die(); 
             }
 
-            return; // diğer kodları durdur
+            return; 
         }
 
         rb.linearVelocity = new Vector2(moveInput.x * moveSpeed, rb.linearVelocity.y);
@@ -93,6 +98,15 @@ public class PlayerController : MonoBehaviour
         {
             Flip();
         }
+        if (rb.linearVelocity.y < 0)
+        {
+            rb.linearVelocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
+        }
+        else if (rb.linearVelocity.y > 0 && !Keyboard.current.spaceKey.isPressed)
+        {
+            rb.linearVelocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
+        }
+
 
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
     }
@@ -116,6 +130,7 @@ public class PlayerController : MonoBehaviour
         {
             Debug.Log("Kediye yardım edildi!");
             car.StartCrash(transform);
+            GameManager.Instance.rescuedAnimals++; // GameManager.Instance.rescuedAnimals++;
         }
     }
 
@@ -159,7 +174,7 @@ public class PlayerController : MonoBehaviour
         else
         {
             Debug.Log("Oyun bitti!");
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name); // sahneyi baştan yükle
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name); 
         }
     }
 
@@ -171,4 +186,14 @@ public class PlayerController : MonoBehaviour
             Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
         }
     }
+
+    // eğer top playera çarparsa
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.CompareTag("Hazard"))
+        {
+            Die();
+        }
+    }
+
 }

@@ -39,6 +39,7 @@ public class CageController : MonoBehaviour
 
         isOpened = true;
         player.hasKey = false;
+        GameManager.Instance.rescuedAnimals++;
     }
 
     System.Collections.IEnumerator HideAnimalDelayed()

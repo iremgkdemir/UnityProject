@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Cat
   - Swamp
+  - Hazard
+  - Weight
+  - SafePlace
   layers:
   - Default
   - TransparentFX
