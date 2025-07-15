@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     private bool isJumping;
     private bool isGrounded;
     public bool hasKey = false;
+    public bool hasFood = false;
     public float fallMultiplier = 2.5f;
     public float lowJumpMultiplier = 2f;
 
@@ -82,6 +83,8 @@ public class PlayerController : MonoBehaviour
             return; 
         }
 
+
+
         rb.linearVelocity = new Vector2(moveInput.x * moveSpeed, rb.linearVelocity.y);
 
         if (isJumping)
@@ -151,6 +154,13 @@ public class PlayerController : MonoBehaviour
                 Debug.Log("Bataklığa düştün! Hareket edemiyorsun.");
             }
         }
+
+        if (other.CompareTag("FallZone"))
+        {
+            Debug.Log("Boşluğa düşüldü!");
+            Die();
+        }
+
     }
 
     private void OnTriggerExit2D(Collider2D other)

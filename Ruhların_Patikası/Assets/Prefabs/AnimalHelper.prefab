@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 395058308196584355}
   - component: {fileID: 8185964086162346131}
   m_Layer: 0
-  m_Name: Cage
+  m_Name: AnimalHelper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -47,7 +47,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d427fecc81dc7ca4ea77b7e546d15139, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cageVisual: {fileID: 4780171456821042599}
+  requiredItemTag: Key
+  cageVisual: {fileID: 0}
   animalObject: {fileID: 8655134485187361311}
 --- !u!61 &8185964086162346131
 BoxCollider2D:
@@ -193,7 +194,7 @@ GameObject:
   - component: {fileID: 3092516748446529545}
   - component: {fileID: 2027409011613261784}
   m_Layer: 0
-  m_Name: CageZone
+  m_Name: Animal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -9,6 +9,10 @@ TagManager:
   - Hazard
   - Weight
   - SafePlace
+  - Food
+  - Key
+  - Spike
+  - FallZone
   layers:
   - Default
   - TransparentFX

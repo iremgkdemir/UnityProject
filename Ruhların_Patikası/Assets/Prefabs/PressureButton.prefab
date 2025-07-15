@@ -139,6 +139,7 @@ MonoBehaviour:
   door: {fileID: 0}
   openOffset: {x: 0, y: 1.8, z: 0}
   openSpeed: 2
+  stayOpenWhenPressed: 0
 --- !u!61 &559719941712075132
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -198,7 +199,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonTop: {fileID: 1757188153143814722}
-  pressedOffset: {x: 0, y: -0.2, z: 0}
+  pressedOffset: {x: 0, y: -0.31, z: 0}
 --- !u!50 &6672227841984272777
 Rigidbody2D:
   serializedVersion: 5

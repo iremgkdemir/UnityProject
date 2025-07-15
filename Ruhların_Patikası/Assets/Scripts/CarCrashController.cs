@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class CarCrashController : MonoBehaviour
 {
@@ -6,7 +6,9 @@ public class CarCrashController : MonoBehaviour
     public float speed = 10f;
     private bool moveToTarget = false;
 
-    public FadeEffect fadeEffect; 
+    public FadeEffect fadeEffect;
+
+    private bool hasFaded = false; 
 
     private void Update()
     {
@@ -14,9 +16,10 @@ public class CarCrashController : MonoBehaviour
         {
             transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
 
-            if (Vector2.Distance(transform.position, target.position) < 0.1f)
+            if (!hasFaded && Vector2.Distance(transform.position, target.position) < 1.7f)
             {
-                fadeEffect.StartFadeOut("Sahne1_YuvayaDo�ru"); 
+                fadeEffect.StartFadeOut("Sahne1_YuvayaDoğru");
+                hasFaded = true;
                 moveToTarget = false;
             }
         }
@@ -27,4 +30,15 @@ public class CarCrashController : MonoBehaviour
         target = playerTransform;
         moveToTarget = true;
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (!hasFaded && other.CompareTag("Player"))
+        {
+            fadeEffect.StartFadeOut("Sahne1_YuvayaDoğru");
+            hasFaded = true;
+            moveToTarget = false;
+        }
+    }
+
 }

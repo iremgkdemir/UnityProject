@@ -7,6 +7,7 @@ public class FadeEffect : MonoBehaviour
 {
     public Image fadeImage;
     public float fadeDuration = 1f;
+    public float waitAfterFade = 1.5f; // ✨ Sahne geçmeden önce bekleme süresi
 
     public void StartFadeOut(string nextSceneName)
     {
@@ -18,6 +19,7 @@ public class FadeEffect : MonoBehaviour
         Color color = fadeImage.color;
         float time = 0f;
 
+        // Fade işlemi
         while (time < fadeDuration)
         {
             float alpha = Mathf.Lerp(0f, 1f, time / fadeDuration);
@@ -26,7 +28,13 @@ public class FadeEffect : MonoBehaviour
             yield return null;
         }
 
+        // Tam siyaha geçiş garantisi
         fadeImage.color = new Color(color.r, color.g, color.b, 1f);
+
+        // ✨ Fade bittikten sonra yazının görünmesi için bekle
+        yield return new WaitForSeconds(waitAfterFade);
+
+        // Sahne geçişi
         SceneManager.LoadScene(sceneName);
     }
 }

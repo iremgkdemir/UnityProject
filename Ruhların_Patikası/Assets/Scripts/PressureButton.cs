@@ -10,6 +10,7 @@ public class PressureButton : MonoBehaviour
     private Vector3 doorClosedPos;
     private Vector3 doorOpenPos;
     private bool isPressed = false;
+    public bool stayOpenWhenPressed = false;
 
     private void Start()
     {
@@ -41,12 +42,19 @@ public class PressureButton : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.CompareTag("Player") || other.CompareTag("Weight"))
+        if ((other.CompareTag("Player") || other.CompareTag("Weight")) && !stayOpenWhenPressed)
+
         {
             isPressed = false;
             UnityEngine.Debug.Log("Butona basılamadıdı");
         }
     }
+
+    public void SetPressed(bool state)
+    {
+        isPressed = state;
+    }
+
 
     public bool GetIsPressed() => isPressed;
 }
