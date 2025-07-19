@@ -9,6 +9,8 @@ public class FadeEffect : MonoBehaviour
     public float fadeDuration = 1f;
     public float waitAfterFade = 1.5f; // ✨ Sahne geçmeden önce bekleme süresi
 
+    public DialogueSystem dialogueSystem;
+
     public void StartFadeOut(string nextSceneName)
     {
         StartCoroutine(FadeOutAndLoadScene(nextSceneName));
@@ -34,7 +36,19 @@ public class FadeEffect : MonoBehaviour
         // ✨ Fade bittikten sonra yazının görünmesi için bekle
         yield return new WaitForSeconds(waitAfterFade);
 
+        // Diyalog başlat
+        if (dialogueSystem != null)
+        {
+            Debug.Log("Diyalog başlatılıyor...");
+            dialogueSystem.StartDialogue();
+        }
+        else
+        {
+            Debug.LogWarning("DialogueSystem atanmadı! (null)");
+        }
+
+
         // Sahne geçişi
-        SceneManager.LoadScene(sceneName);
+       // SceneManager.LoadScene(sceneName);
     }
 }
