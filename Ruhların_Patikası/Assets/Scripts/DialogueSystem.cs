@@ -19,7 +19,7 @@ public class DialogueSystem : MonoBehaviour
 
     private int currentLine = 0;
     private bool isTyping = false;
-    private bool dialogueActive = false; // Önemli!
+    private bool dialogueActive = false; 
 
     void Update()
     {
@@ -43,7 +43,7 @@ public class DialogueSystem : MonoBehaviour
     {
         currentLine = 0;
         dialoguePanel.SetActive(true);
-        dialogueActive = true; // 🎯 Bu olmadan input algılanmaz
+        dialogueActive = true;
         StartCoroutine(TypeLine());
     }
 

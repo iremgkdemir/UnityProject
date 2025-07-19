@@ -7,7 +7,7 @@ public class FadeEffect : MonoBehaviour
 {
     public Image fadeImage;
     public float fadeDuration = 1f;
-    public float waitAfterFade = 1.5f; // ✨ Sahne geçmeden önce bekleme süresi
+    public float waitAfterFade = 1.5f; //Sahne geçmeden önce bekleme süresi
 
     public DialogueSystem dialogueSystem;
 
@@ -33,7 +33,7 @@ public class FadeEffect : MonoBehaviour
         // Tam siyaha geçiş garantisi
         fadeImage.color = new Color(color.r, color.g, color.b, 1f);
 
-        // ✨ Fade bittikten sonra yazının görünmesi için bekle
+        // Fade bittikten sonra yazının görünmesi için bekle
         yield return new WaitForSeconds(waitAfterFade);
 
         // Diyalog başlat
