@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     private bool facingRight = true;
     private Rigidbody2D rb;
     private Vector2 moveInput;
+    private Animator anim;
     private bool isJumping;
     private bool isGrounded;
     public bool hasKey = false;
@@ -41,6 +42,7 @@ public class PlayerController : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
         currentLives = maxLives;
         respawnPosition = respawnPoint != null ? respawnPoint.position : transform.position;
     }
@@ -64,7 +66,12 @@ public class PlayerController : MonoBehaviour
 
         rb.linearVelocity = new Vector2(moveInput.x * moveSpeed, rb.linearVelocity.y);
 
-        if (isJumping)
+        if (anim != null)
+        {
+            anim.SetFloat("Speed", Mathf.Abs(moveInput.x));
+        }
+
+            if (isJumping)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             isJumping = false;

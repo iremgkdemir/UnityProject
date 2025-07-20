@@ -46,6 +46,7 @@ GameObject:
   - component: {fileID: 4446260158774149541}
   - component: {fileID: 282782727710848265}
   - component: {fileID: 2173544305428986062}
+  - component: {fileID: 5283155730671844966}
   m_Layer: 9
   m_Name: Player
   m_TagString: Player
@@ -113,7 +114,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: c43d5bd193dbbee4d9881c47303f5042, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 91e82fc44b4ad0645a152e9bebf367b6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -185,17 +186,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.10128784, y: -0.3274976}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 3.3, y: 3.3}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.4726763, y: 2.6678736}
   m_EdgeRadius: 0
 --- !u!114 &4446260158774149541
 MonoBehaviour:
@@ -224,8 +225,6 @@ MonoBehaviour:
     m_Bits: 320
   car: {fileID: 0}
   swampDelay: 2
-  isTouchingGround: 0
-  isTouchingCrushingWall: 0
 --- !u!114 &282782727710848265
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -340,3 +339,25 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 1
+--- !u!95 &5283155730671844966
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4642845072294066934}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 55869e787bb733943a0b0fb6a8e0881d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

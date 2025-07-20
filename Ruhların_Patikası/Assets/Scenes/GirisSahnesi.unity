@@ -3130,22 +3130,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 282782727710848265, guid: bdb83d809d5fb4649a9ca5760a9fd38a, type: 3}
-      propertyPath: m_DeviceLostEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 282782727710848265, guid: bdb83d809d5fb4649a9ca5760a9fd38a, type: 3}
-      propertyPath: m_DeviceLostEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 282782727710848265, guid: bdb83d809d5fb4649a9ca5760a9fd38a, type: 3}
-      propertyPath: m_DeviceLostEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: -1680190386980627800, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
-    - target: {fileID: 282782727710848265, guid: bdb83d809d5fb4649a9ca5760a9fd38a, type: 3}
-      propertyPath: m_DeviceLostEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 2830479233729277293, guid: bdb83d809d5fb4649a9ca5760a9fd38a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.83
@@ -3192,10 +3176,6 @@ PrefabInstance:
       objectReference: {fileID: 806285408}
     - target: {fileID: 4642845072294066934, guid: bdb83d809d5fb4649a9ca5760a9fd38a, type: 3}
       propertyPath: m_Name
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 4642845072294066934, guid: bdb83d809d5fb4649a9ca5760a9fd38a, type: 3}
-      propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
