@@ -13,17 +13,18 @@ TagManager:
   - Key
   - Spike
   - FallZone
+  - CrushingWall
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - crushLayerMask
   - Water
   - UI
   - Swamp
   - Rock
   - Ground
-  - 
+  - Player
   - 
   - 
   - 
