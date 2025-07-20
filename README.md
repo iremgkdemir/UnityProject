@@ -63,13 +63,13 @@ Oyuncu, 2D platform yapısında ilerleyen bu oyunda, sahipsiz hayvanlara yardım
 - **Daily Scrum** = Daily Scrum toplantıları hem Whatsapp üzerinden hem de Google Meet üzerinden devam etmiştir. Grup 54, projede ilerledikçe Whatsapp üzerinden birbirlerini bilgilendirmiş ve ilerlemelerini paylaşmıştır. Oyunun mekanik yazılımları ve karakterin yazılımları yapılmıştır.
 - Tasarım Grubu karakterlerin görsel tasarımını tamamen yapmıştır.
 
-**Toplantı ve whatsapp ssleri** :
+**Toplantı ve whatsapp görselleri** :
 
 ![Image](https://github.com/user-attachments/assets/b14ab5ae-7e7e-443f-bd75-3d86a4feddb0)
 
 ![Image](https://github.com/user-attachments/assets/4a0b4ae4-c6a3-4abd-b6b5-c5fd3c2f3c0a)
 
-**Referans görsel** : 
+**Referans görseli** : 
 
 ![Image](https://github.com/user-attachments/assets/c160b531-b0dc-4bf4-9408-58278f3aceb1)
 
