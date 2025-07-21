@@ -10,8 +10,10 @@ public class AnimalHelpController : MonoBehaviour
     public string requiredItemTag = "Key"; // "Key" = kafes, "Food" = besleme
 
     [Header("Görseller")]
-    public GameObject cageVisual; // varsa kafes
-    public GameObject animalObject; // hayvan sprite'ý
+    public SpriteRenderer cageRenderer;
+    public Sprite openCageSprite;
+    public GameObject animalObject;
+    public GameObject chainObject; // zinciri buraya atayacaðýz
 
     private bool isHelped = false;
 
@@ -42,8 +44,11 @@ public class AnimalHelpController : MonoBehaviour
     {
         Debug.Log("Hayvana yardým edildi!");
 
-        if (cageVisual != null)
-            cageVisual.SetActive(false); // Kafes varsa kaldýr
+        if (cageRenderer != null && openCageSprite != null)
+            cageRenderer.sprite = openCageSprite;
+
+        if (chainObject != null)
+            chainObject.SetActive(false); // zinciri yok et
 
         if (animalObject != null)
             StartCoroutine(HideAnimalDelayed());

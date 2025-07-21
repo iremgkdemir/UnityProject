@@ -49,6 +49,8 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
+
         if (isInSwamp)
         {
             swampTimer += Time.deltaTime;
@@ -68,10 +70,12 @@ public class PlayerController : MonoBehaviour
 
         if (anim != null)
         {
-            anim.SetFloat("Speed", Mathf.Abs(moveInput.x));
+            anim.SetBool("isWalking", Mathf.Abs(moveInput.x) > 0.01f);
+            anim.SetBool("isJumping", !isGrounded && rb.linearVelocity.y > 0.1f);
+            anim.SetBool("isGrounded", isGrounded);
         }
 
-            if (isJumping)
+        if (isJumping)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             isJumping = false;
@@ -86,9 +90,8 @@ public class PlayerController : MonoBehaviour
             rb.linearVelocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
         else if (rb.linearVelocity.y > 0 && !Keyboard.current.spaceKey.isPressed)
             rb.linearVelocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
-
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
     }
+
 
     public void OnMove(InputAction.CallbackContext context)
     {
@@ -97,8 +100,11 @@ public class PlayerController : MonoBehaviour
 
     public void OnJump(InputAction.CallbackContext context)
     {
+
         if (context.performed && isGrounded)
+        {
             isJumping = true;
+        }
     }
 
     public void OnInteract(InputAction.CallbackContext context)
