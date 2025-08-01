@@ -4,7 +4,7 @@
 
 # Takım İsmi
 
-Grup 54 Google Takımı
+Grup 54 Google Takımı ;)
 
 # Takım Üyeleri
 
