@@ -14,7 +14,9 @@ public class CarCrashController : MonoBehaviour
     {
         if (moveToTarget && target != null)
         {
-            transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+            Vector3 newPosition = transform.position;
+            newPosition.x = Mathf.MoveTowards(transform.position.x, target.position.x, speed * Time.deltaTime);
+            transform.position = newPosition;
 
             if (!hasFaded && Vector2.Distance(transform.position, target.position) < 1.7f)
             {
