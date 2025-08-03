@@ -12,6 +12,9 @@ public class CrushingWall : MonoBehaviour
     public LayerMask groundLayer;
     public LayerMask playerLayer;
     public float crushDetectionHeight = 0.05f;
+    private float lastDamageTime = -999f;
+    public float damageCooldown = 1f; // Saniyede 1 kez hasar verebilir
+
 
     private Vector3 startPos;
     private Vector3 targetPos;
@@ -60,16 +63,19 @@ public class CrushingWall : MonoBehaviour
         Collider2D player = Physics2D.OverlapBox(checkCenter, checkSize, 0f, playerLayer);
         Collider2D ground = Physics2D.OverlapBox(checkCenter, checkSize, 0f, groundLayer);
 
-        if (player != null && ground != null)
+        // Cooldown kontrolü: sadece belirli aralıklarla hasar ver
+        if (player != null && ground != null && Time.time > lastDamageTime + damageCooldown)
         {
             PlayerController pc = player.GetComponent<PlayerController>();
             if (pc != null)
             {
-                Debug.Log("Sıkıştı ve öldü.");
-                pc.Die();
+                Debug.Log("Sıkıştı, can gitti!");
+                pc.Die(); // Canı azalt
+                lastDamageTime = Time.time; // Yeni hasar zamanı kaydedilir
             }
         }
     }
+
 
     void OnDrawGizmosSelected()
     {
