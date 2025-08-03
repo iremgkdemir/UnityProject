@@ -1,5 +1,5 @@
 
-<img width="1024" height="1024" alt="Image" src="https://github.com/user-attachments/assets/041bbd88-5d19-489d-ac87-1baad5e37151" />
+<img width="500" height="500" alt="Image" src="https://github.com/user-attachments/assets/8250f488-44fa-4798-ac4c-aa6b5541ce2e" />
 
 
 # Takım İsmi
@@ -132,11 +132,11 @@ https://github.com/user-attachments/assets/d63570be-10d8-4100-ba07-e439528f2ab9
 
 **Ürün Durumu ekran görüntüleri** :
 
-<img width="1000" height="536" alt="Image" src="https://github.com/user-attachments/assets/87f8f3b5-8902-492d-bb70-14f3b37f89d6" />
+<img width="800" height="429" alt="Image" src="https://github.com/user-attachments/assets/caca3171-0883-44ad-82df-a40eea254aad" />
 
-<img width="1000" height="538" alt="Image" src="https://github.com/user-attachments/assets/6950b2c3-1995-4318-a664-3b50b3adb2d4" />
+<img width="800" height="430" alt="Image" src="https://github.com/user-attachments/assets/cf201525-6fb1-4b49-8e4d-0feea9047283" />
 
-![Image](https://github.com/user-attachments/assets/770edeb1-a6cc-4c55-99dc-00a5ca291565)
+![Image](https://github.com/user-attachments/assets/754d1806-6f83-49b4-b965-69d9fdd0f2cb)
 
 
 **Final video** : 
