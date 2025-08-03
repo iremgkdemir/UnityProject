@@ -132,11 +132,15 @@ https://github.com/user-attachments/assets/d63570be-10d8-4100-ba07-e439528f2ab9
 
 **Ürün Durumu ekran görüntüleri** :
 
+
 <img width="800" height="429" alt="Image" src="https://github.com/user-attachments/assets/caca3171-0883-44ad-82df-a40eea254aad" />
+
 
 <img width="800" height="430" alt="Image" src="https://github.com/user-attachments/assets/cf201525-6fb1-4b49-8e4d-0feea9047283" />
 
+
 ![Image](https://github.com/user-attachments/assets/754d1806-6f83-49b4-b965-69d9fdd0f2cb)
+
 
 
 **Final video** : 
