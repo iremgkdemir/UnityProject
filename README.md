@@ -1,5 +1,5 @@
 
-![Image](https://github.com/user-attachments/assets/209b644e-b629-4a5f-91d9-192e49f435de)
+<img width="1024" height="1024" alt="Image" src="https://github.com/user-attachments/assets/041bbd88-5d19-489d-ac87-1baad5e37151" />
 
 
 # Takım İsmi
@@ -9,7 +9,7 @@ Grup 54 Google Takımı
 # Takım Üyeleri
 
 * Scrum Master  - Demet Karakoç
-* Developer - İrem Gökdemir, Yusuf Eren Bakınç
+* Developer - Münnevver İrem Gökdemir, Yusuf Eren Bakınç
 * Product Owner - Sena Dikici, Hakan Özkan
 
 # Oyun ismi
@@ -73,7 +73,7 @@ Oyuncu, 2D platform yapısında ilerleyen bu oyunda, sahipsiz hayvanlara yardım
 
 ![Image](https://github.com/user-attachments/assets/c160b531-b0dc-4bf4-9408-58278f3aceb1)
 
-**Ürün durumu görüntüleri** :
+**Ürün durumu ekran görüntüleri** :
 Sahne 1
 
 ![Image](https://github.com/user-attachments/assets/e266aba6-b673-4879-a460-f4d5c27e4b0b)
@@ -113,3 +113,54 @@ https://github.com/user-attachments/assets/d63570be-10d8-4100-ba07-e439528f2ab9
 7. Tasarım ekibi karakter güncellemesini Google Drive ve Whatsapp üzerinden ekip üyeleri ile paylaşmıştır.
 8. Karakterin mekanikleri entegre edilmesi için not alınmıştır.
 9. Ekip üyeleri gelecek sprint içinde ne yapmaları gerektiğini dair Whatsapp üzerinden kısaca bahsetmişlerdir.
+
+
+
+
+# SPRINT 3
+
+**Sprint içinde tamamlanması tahmin edilen puan** : 13
+
+**Daily Scrum** : Daily Scrum toplantıları hem Whatsapp üzerinden hem de Discord üzerinden devam etmiştir. Gün içerisinde WhatsApp üzerinden iletişime geçilmiştir. WhatsApp ve Discord üzerinden ekip üyeleri tasarım ve modelleme hakkında planlama yapmıştır. 
+
+**Toplantı ve WhatsApp görselleri** :
+
+![Image](https://github.com/user-attachments/assets/d018a84f-4c40-40da-8f00-2a649430ec77)
+
+![Image](https://github.com/user-attachments/assets/ce585483-cb3f-4272-b7a1-1a1f2d5fba66)
+
+
+**Ürün Durumu ekran görüntüleri** :
+
+<img width="1000" height="536" alt="Image" src="https://github.com/user-attachments/assets/87f8f3b5-8902-492d-bb70-14f3b37f89d6" />
+
+<img width="1000" height="538" alt="Image" src="https://github.com/user-attachments/assets/6950b2c3-1995-4318-a664-3b50b3adb2d4" />
+
+![Image](https://github.com/user-attachments/assets/770edeb1-a6cc-4c55-99dc-00a5ca291565)
+
+
+**Final video** : 
+
+[Proje Tanıtım Videosu](https://www.youtube.com/watch?v=fcVqq4KQmhY)
+
+
+
+**Sprint Review** :
+- Takım Discord üzerinden toplantı yaptı. Ekip üyeleri, Scrum boyunca özveriyle çalışıp elinden geleni en iyi şekilde yaptığı için takım üyeleri birbirini tebrik etti.
+- Son sprint tamamlandıktan sonra ekip üyeleri ile toplantı yapıldı ve proje tamamlandı.
+-  1 karakter tasarımı, 3 adet oyun içeriğinde yer alan hayvan tasarımı, 1 giriş sahnesi animasyonu, 2 adet map tasarımı, birden fazla platform kodları, farklı mekanikler, karakter ve platform animasyonları, 2d tasarım assetleri ve kamera entegrasyonu yapılmıştır.
+-  Oyun içinde yer alan sesler belirledi ama projeye eklenememiştir. Oyun Youtube tanıtım videosu içerisinde eklenmiştir.
+- Tamamlanması gereken 36 puanlık backlog puanı, oyun için kullandığımız UI tasarım eksikliğinden kaynaklı tamamlanamamıştır.(UI tasarımı üzerinde çalışılmış ama tamamlanamamıştır.)
+- **Sprint Review katılımcıları**: Münevver İrem Gökdemir, Demet Karakoç, Sena Dikici, Hakan Özkan, Yusuf Eren Bakınç.
+
+
+**Sprint Retrospective** :
+- Ürünün son hali ve son haline dair görseller paylaşıldı.
+- Karakterin animasyonları ve mekanikleri tamamlanmıştır.
+- Scrum Master ve tasarım ekibi Discord üzerinden karakter tasarımının son hali için toplantı yaptı.
+- Bütün ekip üyeleri ile Discord üzerinden toplantı yapıldı. Proje teslimi için son görevler yerine getirildi.
+- Developer grubu, ana karakterin mekanik yazılımlarını ve oyun temasına ait son yazılım kodlarını entegre etmiştir.
+- Tasarım grubu Discord üzerinden iletişimde kalarak tasarımları tamamlamıştır. Tasarımların son halini ekip üyelerinin dahil olduğu Drive üzerinden paylaşıp teslim etmiştir.
+- Gelecek projelerde iletişimde kalınacağına dair konuşmalar yapıldı.
+
+  
