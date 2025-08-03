@@ -273,7 +273,7 @@ Transform:
   m_GameObject: {fileID: 94676501}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 141.95, y: -7.62, z: 0}
+  m_LocalPosition: {x: 145.27, y: -7.62, z: 0}
   m_LocalScale: {x: 4, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9192,20 +9192,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2830479233729277293, guid: bdb83d809d5fb4649a9ca5760a9fd38a, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2830479233729277293, guid: bdb83d809d5fb4649a9ca5760a9fd38a, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2830479233729277293, guid: bdb83d809d5fb4649a9ca5760a9fd38a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.99
+      value: -7.1014
       objectReference: {fileID: 0}
     - target: {fileID: 2830479233729277293, guid: bdb83d809d5fb4649a9ca5760a9fd38a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.41
+      value: -0.63
       objectReference: {fileID: 0}
     - target: {fileID: 2830479233729277293, guid: bdb83d809d5fb4649a9ca5760a9fd38a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -9382,7 +9374,7 @@ GameObject:
   - component: {fileID: 1214008516}
   - component: {fileID: 1214008515}
   m_Layer: 0
-  m_Name: GameObject (1)
+  m_Name: cameraalan
   m_TagString: Untagged
   m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -9622,7 +9614,7 @@ Transform:
   m_GameObject: {fileID: 1224403991}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.2406039, y: -0.54999983, z: -15}
+  m_LocalPosition: {x: -0.8763995, y: -0.76999986, z: -15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9914,7 +9906,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1574747039}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: "biti\u015Fimage"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10218,7 +10210,7 @@ Transform:
   m_GameObject: {fileID: 1786116974}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.2406039, y: -0.54999983, z: -15}
+  m_LocalPosition: {x: -0.8763995, y: -0.76999986, z: -15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -34,7 +34,7 @@ public class SafePlaceTrigger : MonoBehaviour
 
         dialogText.text = "";
 
-        yield return StartCoroutine(Fade(1f, 0f));
+       // yield return StartCoroutine(Fade(1f, 0f));
 
         SceneManager.LoadScene(nextSceneName);
     }
